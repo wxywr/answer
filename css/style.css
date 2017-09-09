@@ -1,0 +1,193 @@
+body,ul,ol,p,h1,h2,h3,h4,h5,dl,dd,form,input,textarea,
+td,th,button,strong,em,select,video,canvas{margin:0;padding:0;}
+li{list-style:none;}
+table{ border-collapse:collapse;}
+textarea{resize:none;overflow:auto;}
+img{ border:none; vertical-align:middle;max-width: 100%;display: block;}
+em{ font-style:normal;}
+a{ text-decoration:none;}
+input{outline: none;}
+a, img {-webkit-touch-callout: none; }
+html, body {-webkit-user-select: none;   user-select: none;}
+body{font-family: "Helvetica Neue", Helvetica, "STHeiTi", sans-serif; overflow-x:hidden; overflow-y:auto;font-size: 0.14rem;}
+html{font-size: 100px;}
+.fl{float:left;}
+.fr{float:right;}
+.ground{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.info{
+	width: 80%;
+	position: absolute;
+	left: 50%;
+	top: 60%;
+	margin-left: -40%;
+	color: #333;
+	font-size: 0.18rem;
+}
+.list{
+	width: 90%;
+	margin: 0 auto;
+}
+.list .item{
+	position: relative;
+	width: 100%;
+	margin: 0.45rem 0 0.3rem;
+}
+.list .item .tit{
+	font-size: 0.18rem;
+	color: #1E807B;
+	width: 90%;
+	margin-left: 10%;
+}
+.list .item .ye{
+	display: block;
+	width: 0.23rem;
+	height: 0.23rem;
+	line-height: 0.23rem;
+	background: url(../img/ye.png) no-repeat;
+	background-size: 70%;
+	background-position: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: #fff;
+	text-align: center;
+}
+.list .select li{
+	margin: 0.2rem 0;
+	position: relative;
+	overflow: hidden;
+}
+.list .select li input{
+	opacity: 0;
+	position: absolute;
+	left: 0.02rem;
+	top: 0.02rem;
+	z-index: 99;
+}
+.list .select li .rdo{
+	display: inline-block;
+	width: 0.2rem;
+	height: 0.2rem;
+	background: url(../img/radio.png) no-repeat;
+	background-size: 100%;
+	background-position: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 9;
+}
+.list .select li .true:checked+i{
+	background: url(../img/or.png) no-repeat;
+	background-size: 100%;
+	background-position: 0 0;
+}
+.list .select li .false:checked+i{
+	background: url(../img/or.png) no-repeat;
+	background-size: 100%;
+	background-position: 0 -0.25rem;
+}
+.list .select li label{
+	display: inline-block;
+	width: 90%;
+	color: #333;
+	font-size: 0.16rem;
+	float: right;
+}
+.face{
+	width: 100%;
+	position: absolute;
+	bottom: 28%;
+	left: 50%;
+	margin-left: -50%;
+	/*display: none;*/
+}
+.face .img{
+	width: 0.6rem;
+	height: 0.6rem;
+	background: url(../img/face.png) no-repeat;
+	background-size: 100%;
+	/*background-position: 0 -52px;*/
+	margin: 0 auto;
+}
+.face p{
+	color: #009CE5;
+	font-size: 0.18rem;
+	text-align: center;
+	margin-top: 0.1rem;
+}
+.num{
+	text-align: center;
+	color: #878787;
+	font-size: 0.16rem;
+	margin: 0.3rem 0 0.1rem;
+	position: absolute;
+	bottom: 18%;
+	left: 50%;
+	width: 0.6rem;
+	margin-left: -0.3rem;
+}
+.button{
+	display: block;
+	width: 52%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	text-align: center;
+	background: url(../img/btn.png) no-repeat;
+	background-size: 100%;
+	background-position: 0 -0.45rem;
+	border: 0;
+	color: #fff;
+	font-size: 0.18rem;
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	margin-left: -26%;
+}
+/*/////////输入手机号///////////*/
+.good{
+	width: 30%;
+	display: block;
+	margin: 0.7rem auto;
+}
+.order{
+	width: 75%;
+	margin: 0 auto;
+	color: #333;
+	font-size: 0.16rem;
+}
+.phone{
+	width: 75%;
+	margin: 0.5rem auto 0.7rem;
+}
+.phone span{
+	color: #1E807B;
+	font-size: 0.16rem;
+}
+.phone input{
+	width: 75%;
+	height: 0.25rem;
+	border: 1px solid #ccc;
+	border-width: 0 0 1px 0;
+	text-indent: 0.2rem;
+	background-color: #fff;
+	color: #333;
+	font-size: 0.16rem;
+}
+.submit{
+	width: 52%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	display: block;
+	margin: 0 auto;
+	background: url(../img/btn.png) no-repeat;
+	background-size: 100%;
+	background-position: 0 -0.45rem;
+	text-align: center;
+	color: #ccc;
+	font-size: 0.18rem;
+	border: 0;
+}
