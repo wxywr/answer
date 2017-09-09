@@ -103,7 +103,7 @@ html{font-size: 100px;}
 	bottom: 28%;
 	left: 50%;
 	margin-left: -50%;
-	/*display: none;*/
+	display: none;
 }
 .face .img{
 	width: 0.6rem;
