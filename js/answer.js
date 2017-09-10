@@ -4,16 +4,16 @@ $(window).resize(function(){
 $(function(){
 	$('html').css({'font-size':$(window).width()/3.9+"px"});
 
-	var t = 0;
-	var s = $('.wrap .list').length;
-	function done(){
-		$('.wrap .list').eq(t).show();
-		$('.wrap .list').eq(t).siblings().hide();
+	var n=0;
+	var s = $('.wrap .list').length; 
+	function change(){
+		$('.wrap .list').eq(n).show();
+		$('.wrap .list').eq(n).siblings().hide();
 	}
-	$('.button').click(function(){
-		t++;
-		done();
-		if(t>=s-1){
+	$(".button").click(function(){
+	 	n++;
+		change();
+		if(n>=s-1){
 			$('.button').val('下一页');
 			$('.button').css('backgroundPosition','0 0');
 			$('.button').click(function(){
@@ -22,18 +22,20 @@ $(function(){
 		}
 	})
 
-	$('.select .true').click(function(){
-		$('.face').css('display','block');
-		$('.face p').html('回答正确');
-		$('.face p').css('color','#009CE5;');
-		$('.face .img').css('backgroundPosition','0 0');
+	$('.topic-a .true').click(function(){
+		$('.topic-a .face').css('visibility','visible');
+		$('.topic-a .face p').html('回答正确');
+		$('.topic-a .face p').css('color','#009CE5;');
+		$('.topic-a .face .img').css('backgroundPosition','0 0');
+		$('.topic-a .button').css('backgroundPosition','0 0');
 	})
 
-	$('.select .false').click(function(){
-		$('.face').css('display','block');
-		$('.face p').html('正确选项:C');
-		$('.face p').css('color','#333');
-		$('.face .img').css('backgroundPosition','0 -0.64rem');
+	$('.topic-a .false').click(function(){
+		$('.topic-a .face').css('visibility','visible');
+		$('.topic-a .face p').html('正确选项: <strong>C</strong>');
+		$('.topic-a .face p').css('color','#333');
+		$('.topic-a .face .img').css('backgroundPosition','0 -0.64rem');
+		$('.topic-a .button').css('backgroundPosition','0 0');
 	})
 
 	$('.tels').keyup(function(){
