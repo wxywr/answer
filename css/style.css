@@ -74,7 +74,6 @@ strong{
 	margin: 0.2rem 0;
 	position: relative;
 	overflow: hidden;
-	background-color: orange;
 }
 .list .select li input{
 	opacity: 0;
@@ -94,7 +93,6 @@ strong{
 	left: 0;
 	top: 0;
 	z-index: 9;
-	background-color: #00ff00;
 }
 .list .select li .true:checked+i{
 	background: url(../img/or.png) no-repeat;
