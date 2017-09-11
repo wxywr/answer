@@ -94,6 +94,7 @@ strong{
 	top: 0;
 	z-index: 9;
 	border-radius: 50%;
+	background-color: red;
 }
 .list .select li .true:checked+i{
 	background: url(../img/or.png) no-repeat;
