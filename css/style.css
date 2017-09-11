@@ -90,8 +90,9 @@ strong{
 	background-position: center;
 	position: absolute;
 	left: 0;
-	top: 0;
+	top: 0.01rem;
 	z-index: 9;
+	background-color: red;
 }
 .list .select li .true:checked+i{
 	background: url(../img/or.png) no-repeat;
