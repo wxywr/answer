@@ -30,6 +30,7 @@ $(function(){
 		$('.nextOne .face p').css('color','#009CE5;');
 		$('.nextOne .face .img').css('backgroundPosition','0 0');
 		$('.nextOne .button').css('backgroundPosition','0 0');
+		$('.nextOne .button').removeAttr('disabled');
 	})
 
 	$('.topic-a .false').click(function(){
@@ -38,6 +39,7 @@ $(function(){
 		$('.topic-a .face p').css('color','#333');
 		$('.topic-a .face .img').css('backgroundPosition','0 -0.64rem');
 		$('.topic-a .button').css('backgroundPosition','0 0');
+		$('.topic-a .button').removeAttr('disabled');
 	})
 	$('.topic-b .false').click(function(){
 		$('.topic-b .face').css('visibility','visible');
@@ -45,6 +47,7 @@ $(function(){
 		$('.topic-b .face p').css('color','#333');
 		$('.topic-b .face .img').css('backgroundPosition','0 -0.64rem');
 		$('.topic-b .button').css('backgroundPosition','0 0');
+		$('.topic-b .button').removeAttr('disabled');
 	})
 	$('.topic-c .false').click(function(){
 		$('.topic-c .face').css('visibility','visible');
@@ -52,6 +55,7 @@ $(function(){
 		$('.topic-c .face p').css('color','#333');
 		$('.topic-c .face .img').css('backgroundPosition','0 -0.64rem');
 		$('.topic-c .button').css('backgroundPosition','0 0');
+		$('.topic-c .button').removeAttr('disabled');
 	})
 	$('.topic-d .false').click(function(){
 		$('.topic-d .face').css('visibility','visible');
@@ -59,6 +63,7 @@ $(function(){
 		$('.topic-d .face p').css('color','#333');
 		$('.topic-d .face .img').css('backgroundPosition','0 -0.64rem');
 		$('.topic-d .button').css('backgroundPosition','0 0');
+		$('.topic-d .button').removeAttr('disabled');
 	})
 	$('.topic-e .false').click(function(){
 		$('.topic-e .face').css('visibility','visible');
@@ -66,6 +71,7 @@ $(function(){
 		$('.topic-e .face p').css('color','#333');
 		$('.topic-e .face .img').css('backgroundPosition','0 -0.64rem');
 		$('.topic-e .button').css('backgroundPosition','0 0');
+		$('.topic-e .button').removeAttr('disabled');
 	})
 
 
