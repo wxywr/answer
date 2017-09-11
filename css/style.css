@@ -73,6 +73,7 @@ strong{
 	margin: 0.2rem 0;
 	position: relative;
 	overflow: hidden;
+	background-color: blue;
 }
 .list .select li input{
 	opacity: 0;
