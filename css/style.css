@@ -81,6 +81,7 @@ strong{
 	left: 0.02rem;
 	top: 0.02rem;
 	z-index: 99;
+	background-color: orange;
 }
 .list .select li .rdo{
 	display: inline-block;
@@ -93,6 +94,7 @@ strong{
 	left: 0;
 	top: 0;
 	z-index: 9;
+	background-color: #00ff00;
 }
 .list .select li .true:checked+i{
 	background: url(../img/or.png) no-repeat;
