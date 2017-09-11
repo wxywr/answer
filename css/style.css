@@ -96,12 +96,12 @@ strong{
 }
 .list .select li .true:checked+i{
 	background: url(../img/or.png) no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	background-position: 0 0;
 }
 .list .select li .false:checked+i{
 	background: url(../img/or.png) no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	background-position: 0 -0.24rem;
 }
 .list .select li label{
