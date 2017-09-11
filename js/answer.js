@@ -54,7 +54,7 @@ $(function(){
 	})
 	$('.topic-c .false').click(function(){
 		$('.topic-c .face').css('visibility','visible');
-		$('.topic-c .face p').html('正确选项: <strong>D</strong>');
+		$('.topic-c .face p').html('正确选项: <strong>C</strong>');
 		$('.topic-a .face p').addClass('bla');
 		$('.nextOne .face p').removeClass('blu');
 		$('.topic-c .face .img').css('backgroundPosition','0 -0.64rem');
