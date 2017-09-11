@@ -36,7 +36,7 @@ $(function(){
 
 	$('.topic-a .false').click(function(){
 		$('.topic-a .face').css('visibility','visible');
-		$('.topic-a .face p').html('正确选项: <strong>C</strong>');
+		$('.topic-a .face p').html('正确选项: <strong>B</strong>');
 		$('.topic-a .face p').addClass('bla');
 		$('.nextOne .face p').removeClass('blu');
 		$('.topic-a .face .img').css('backgroundPosition','0 -0.64rem');
@@ -45,7 +45,7 @@ $(function(){
 	})
 	$('.topic-b .false').click(function(){
 		$('.topic-b .face').css('visibility','visible');
-		$('.topic-b .face p').html('正确选项: <strong>C</strong>');
+		$('.topic-b .face p').html('正确选项: <strong>B</strong>');
 		$('.topic-a .face p').addClass('bla');
 		$('.nextOne .face p').removeClass('blu');
 		$('.topic-b .face .img').css('backgroundPosition','0 -0.64rem');
