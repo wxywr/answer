@@ -87,7 +87,7 @@ strong{
 	width: 0.2rem;
 	height: 0.2rem;
 	background: url(../img/radio.png) no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	background-position: center;
 	position: absolute;
 	left: 0;
