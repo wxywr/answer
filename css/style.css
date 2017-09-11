@@ -91,7 +91,7 @@ strong{
 	background-position: center;
 	position: absolute;
 	left: 0;
-	top: 0.01rem;
+	top: 0;
 	z-index: 9;
 	background-color: red;
 }
