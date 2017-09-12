@@ -4,83 +4,7 @@ $(window).resize(function(){
 $(function(){
 	$('html').css({'font-size':$(window).width()/3.9+"px"});
 
-	var n=0;
-	var s = $('.wrap .list').length; 
-	function change(){
-		$('.wrap .list').eq(n).show();
-		$('.wrap .list').eq(n).siblings().hide();
-	}
-	$(".button").click(function(){
-		$('.nextOne .face').css('visibility','hidden');
-		$('.nextOne .button').css('backgroundPosition','0 -0.45rem');
-	 	n++;
-		change();
-		if(n>=s-1){
-			$('.button').val('下一页');
-			$('.button').css('backgroundPosition','0 0');
-			$('.button').click(function(){
-				window.location.href = 'contact.html';
-			})
-		}
-	})
-
-	$('.select .true').click(function(){
-		$('.nextOne .face').css('visibility','visible');
-		$('.nextOne .face p').html('回答正确');
-		$('.nextOne .face p').addClass('blu');
-		$('.nextOne .face p').removeClass('bla');
-		$('.nextOne .face .img').css('backgroundPosition','0 0');
-		$('.nextOne .button').css('backgroundPosition','0 0');
-		$('.nextOne .button').removeAttr('disabled');
-	})
-
-	$('.topic-a .false').click(function(){
-		$('.topic-a .face').css('visibility','visible');
-		$('.topic-a .face p').html('正确选项: <strong>D</strong>');
-		$('.topic-a .face p').addClass('bla');
-		$('.nextOne .face p').removeClass('blu');
-		$('.topic-a .face .img').css('backgroundPosition','0 -0.64rem');
-		$('.topic-a .button').css('backgroundPosition','0 0');
-		$('.topic-a .button').removeAttr('disabled');
-	})
-	$('.topic-b .false').click(function(){
-		$('.topic-b .face').css('visibility','visible');
-		$('.topic-b .face p').html('正确选项: <strong>D</strong>');
-		$('.topic-a .face p').addClass('bla');
-		$('.nextOne .face p').removeClass('blu');
-		$('.topic-b .face .img').css('backgroundPosition','0 -0.64rem');
-		$('.topic-b .button').css('backgroundPosition','0 0');
-		$('.topic-b .button').removeAttr('disabled');
-	})
-	$('.topic-c .false').click(function(){
-		$('.topic-c .face').css('visibility','visible');
-		$('.topic-c .face p').html('正确选项: <strong>C</strong>');
-		$('.topic-a .face p').addClass('bla');
-		$('.nextOne .face p').removeClass('blu');
-		$('.topic-c .face .img').css('backgroundPosition','0 -0.64rem');
-		$('.topic-c .button').css('backgroundPosition','0 0');
-		$('.topic-c .button').removeAttr('disabled');
-	})
-	$('.topic-d .false').click(function(){
-		$('.topic-d .face').css('visibility','visible');
-		$('.topic-d .face p').html('正确选项: <strong>D</strong>');
-		$('.topic-a .face p').addClass('bla');
-		$('.nextOne .face p').removeClass('blu');
-		$('.topic-d .face .img').css('backgroundPosition','0 -0.64rem');
-		$('.topic-d .button').css('backgroundPosition','0 0');
-		$('.topic-d .button').removeAttr('disabled');
-	})
-	$('.topic-e .false').click(function(){
-		$('.topic-e .face').css('visibility','visible');
-		$('.topic-e .face p').html('正确选项: <strong>D</strong>');
-		$('.topic-a .face p').addClass('bla');
-		$('.nextOne .face p').removeClass('blu');
-		$('.topic-e .face .img').css('backgroundPosition','0 -0.64rem');
-		$('.topic-e .button').css('backgroundPosition','0 0');
-		$('.topic-e .button').removeAttr('disabled');
-	})
-
-
+// 输入手机号
 	$('.tels').keyup(function(){
 		var phone = $('.tels').val(); 
 		if((/^1[34578]\d{9}$/.test(phone))){
@@ -104,5 +28,53 @@ $(function(){
 			return true;
 		}
 	})
-	
+
+// 单选是否选中
+	$('.one').click(function(){
+		var radio_a= $('input:radio[name="sel"]:checked').val();
+        if(radio_a==null){
+            return false;
+        }
+        else{
+        	$('.wrap .list').eq(1).css('display','block').siblings().css('display','none');
+        }
+	})
+	$('.two').click(function(){
+		var radio_b= $('input:radio[name="sel-a"]:checked').val();
+        if(radio_b==null){
+            return false;
+        }
+        else{
+        	$('.wrap .list').eq(2).css('display','block').siblings().css('display','none');
+        }
+	})
+	$('.three').click(function(){
+		var radio_c= $('input:radio[name="sel-b"]:checked').val();
+        if(radio_c==null){
+            return false;
+        }
+        else{
+        	$('.wrap .list').eq(3).css('display','block').siblings().css('display','none');
+        }
+	})
+	$('.four').click(function(){
+		var radio_d= $('input:radio[name="sel-c"]:checked').val();
+        if(radio_d==null){
+            return false;
+        }
+        else{
+        	$('.wrap .list').eq(4).css('display','block').siblings().css('display','none');
+        }
+	})
+	$('.five').click(function(){
+		var radio_e= $('input:radio[name="sel-d"]:checked').val();
+        if(radio_e==null){
+            return false;
+        }
+        else{
+        	window.location.href = 'contact.html';
+        }
+	})
+
+
 });
