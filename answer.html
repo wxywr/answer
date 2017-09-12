@@ -26,7 +26,7 @@
 					<p></p>
 				</div>
 				<div class="num">(1/5)</div>
-				<input type="button" value="下一题" class="button" disabled="">
+				<input type="button" value="下一题" class="button one">
 			</div>
 		</div>
 		<div class="list hide topic-b">
@@ -46,7 +46,7 @@
 					<p></p>
 				</div>
 				<div class="num">(2/5)</div>
-				<input type="button" value="下一题" class="button" disabled="">
+				<input type="button" value="下一题" class="button two">
 			</div>
 		</div>
 		<div class="list hide topic-c">
@@ -66,7 +66,7 @@
 					<p></p>
 				</div>
 				<div class="num">(3/5)</div>
-				<input type="button" value="下一题" class="button" disabled="">
+				<input type="button" value="下一题" class="button three">
 			</div>
 		</div>
 		<div class="list hide topic-d">
@@ -86,7 +86,7 @@
 					<p></p>
 				</div>
 				<div class="num">(4/5)</div>
-				<input type="button" value="下一题" class="button" disabled="">
+				<input type="button" value="下一题" class="button four">
 			</div>
 		</div>
 		<div class="list hide topic-e">
@@ -106,11 +106,37 @@
 					<p></p>
 				</div>
 				<div class="num">(5/5)</div>
-				<input type="button" value="下一题" class="button" disabled="">
+				<input type="button" value="下一题" class="button five">
 			</div>
 		</div>
 	</div>
 </body>
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="js/answer.js"></script>
+<script>
+	var t = document.querySelectorAll('.true');
+	var face = document.querySelectorAll('.face');
+	var p = document.querySelectorAll('.face p');
+	var btn = document.querySelectorAll('.button');
+	for(var i=0;i<t.length;i++){
+		t[i].index = i+1;
+		t[i].onclick=function(){
+			for(var j=0;j<face.length;j++){
+				face[j].style.visibility='visible';
+			}
+			face[this.index].style.visibility='hidden';
+			for(var k=0;k<p.length;k++){
+				p[k].innerHTML='回答正确';
+				p[k].setAttribute('class','blu');
+			}
+			p[this.index].innerHTML='';
+			p[this.index].setAttribute('class','bla');
+			for(var y=0;y<btn.length;y++){
+				btn[y].style.backgroundPosition='0 0';
+			}
+			btn[this.index].style.backgroundPosition='0 -0.45rem';
+		}
+	}
+
+</script>
 </html>
