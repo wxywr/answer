@@ -118,7 +118,8 @@
 	var face = document.querySelectorAll('.face');
 	var p = document.querySelectorAll('.face p');
 	var btn = document.querySelectorAll('.button');
-	for(var i=0;i<t.length;i++){
+	var pic = document.querySelectorAll('.face .img');
+	for(var i=0;i<t.length-1;i++){
 		t[i].index = i+1;
 		t[i].onclick=function(){
 			for(var j=0;j<face.length;j++){
@@ -135,6 +136,10 @@
 				btn[y].style.backgroundPosition='0 0';
 			}
 			btn[this.index].style.backgroundPosition='0 -0.45rem';
+			for(var a=0;a<pic.length;a++){
+				pic[a].style.backgroundPosition='0 0';
+			}
+			pic[this.index].style.backgroundPosition='0 -0.64rem';
 		}
 	}
 
