@@ -84,6 +84,7 @@ $(function(){
 		$('.face p').removeClass('bla');
 		$('.face .img').eq(dex).css('backgroundPosition','0 0');
 		$('.button').eq(dex).css('backgroundPosition','0 0');
+		$('.button').eq(dex).val('下一页');
 	})
 
 	$('.topic-a .false').click(function(){
@@ -125,6 +126,7 @@ $(function(){
 		$('.nextOne .face p').removeClass('blu');
 		$('.topic-e .face .img').css('backgroundPosition','0 -0.64rem');
 		$('.topic-e .button').css('backgroundPosition','0 0');
+		$('.topic-e .button').val('下一页');
 	})
 
 });
