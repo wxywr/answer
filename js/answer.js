@@ -29,6 +29,7 @@ $(function(){
 		}
 	})
 
+
 // 单选是否选中
 	$('.one').click(function(){
 		var radio_a= $('input:radio[name="sel"]:checked').val();
@@ -84,49 +85,90 @@ $(function(){
 		$('.face p').removeClass('bla');
 		$('.face .img').eq(dex).css('backgroundPosition','0 0');
 		$('.button').eq(dex).css('backgroundPosition','0 0');
-		$('.button').eq(dex).val('下一页');
 	})
 
 	$('.topic-a .false').click(function(){
 		$('.topic-a .face').css('visibility','visible');
 		$('.topic-a .face p').html('正确选项: <strong>D</strong>');
 		$('.topic-a .face p').addClass('bla');
-		$('.nextOne .face p').removeClass('blu');
 		$('.topic-a .face .img').css('backgroundPosition','0 -0.64rem');
 		$('.topic-a .button').css('backgroundPosition','0 0');
 	})
 	$('.topic-b .false').click(function(){
 		$('.topic-b .face').css('visibility','visible');
 		$('.topic-b .face p').html('正确选项: <strong>D</strong>');
-		$('.topic-a .face p').addClass('bla');
-		$('.nextOne .face p').removeClass('blu');
+		$('.topic-b .face p').addClass('bla');
 		$('.topic-b .face .img').css('backgroundPosition','0 -0.64rem');
 		$('.topic-b .button').css('backgroundPosition','0 0');
 	})
 	$('.topic-c .false').click(function(){
 		$('.topic-c .face').css('visibility','visible');
 		$('.topic-c .face p').html('正确选项: <strong>C</strong>');
-		$('.topic-a .face p').addClass('bla');
-		$('.nextOne .face p').removeClass('blu');
+		$('.topic-c .face p').addClass('bla');
 		$('.topic-c .face .img').css('backgroundPosition','0 -0.64rem');
 		$('.topic-c .button').css('backgroundPosition','0 0');
 	})
 	$('.topic-d .false').click(function(){
 		$('.topic-d .face').css('visibility','visible');
 		$('.topic-d .face p').html('正确选项: <strong>D</strong>');
-		$('.topic-a .face p').addClass('bla');
-		$('.nextOne .face p').removeClass('blu');
+		$('.topic-d .face p').addClass('bla');
 		$('.topic-d .face .img').css('backgroundPosition','0 -0.64rem');
 		$('.topic-d .button').css('backgroundPosition','0 0');
 	})
 	$('.topic-e .false').click(function(){
 		$('.topic-e .face').css('visibility','visible');
 		$('.topic-e .face p').html('正确选项: <strong>D</strong>');
-		$('.topic-a .face p').addClass('bla');
-		$('.nextOne .face p').removeClass('blu');
+		$('.topic-e .face p').addClass('bla');
 		$('.topic-e .face .img').css('backgroundPosition','0 -0.64rem');
 		$('.topic-e .button').css('backgroundPosition','0 0');
-		$('.topic-e .button').val('下一页');
 	})
+
+
+	// 单选问答四选一
+	$('.topic-a li').click(function(){
+		$('input:radio[name="sel"]:checked').parent().parent().find('input:radio[name="sel"]').each(
+			function(){
+				if($(this).attr("checked")==undefined){
+					$(this).attr("disabled",true);
+				}
+			}
+		);
+	});
+	$('.topic-b li').click(function(){
+		$('input:radio[name="sel-a"]:checked').parent().parent().find('input:radio[name="sel-a"]').each(
+			function(){
+				if($(this).attr("checked")==undefined){
+					$(this).attr("disabled",true);
+				}
+			}
+		);
+	});
+	$('.topic-c li').click(function(){
+		$('input:radio[name="sel-b"]:checked').parent().parent().find('input:radio[name="sel-b"]').each(
+			function(){
+				if($(this).attr("checked")==undefined){
+					$(this).attr("disabled",true);
+				}
+			}
+		);
+	});
+	$('.topic-d li').click(function(){
+		$('input:radio[name="sel-c"]:checked').parent().parent().find('input:radio[name="sel-c"]').each(
+			function(){
+				if($(this).attr("checked")==undefined){
+					$(this).attr("disabled",true);
+				}
+			}
+		);
+	});
+	$('.topic-e li').click(function(){
+		$('input:radio[name="sel-d"]:checked').parent().parent().find('input:radio[name="sel-d"]').each(
+			function(){
+				if($(this).attr("checked")==undefined){
+					$(this).attr("disabled",true);
+				}
+			}
+		);
+	});
 
 });
