@@ -77,16 +77,45 @@ $(function(){
         }
 	})
 
-	var dex=4;
-	$('.true').eq(dex).click(function(){
-		$('.face').eq(dex).css('visibility','visible');
-		$('.face p').eq(dex).html('回答正确');
-		$('.face p').eq(dex).addClass('blu');
-		$('.face p').removeClass('bla');
-		$('.face .img').eq(dex).css('backgroundPosition','0 0');
-		$('.button').eq(dex).css('backgroundPosition','0 0');
+	// 回答正确
+	$('.true').eq(0).click(function(){
+		$('.face').eq(0).css('visibility','visible');
+		$('.face p').eq(0).html('回答正确');
+		$('.face p').eq(0).addClass('blu');
+		$('.face .img').eq(0).css('backgroundPosition','0 0');
+		$('.button').eq(0).css('backgroundPosition','0 0');
+	})
+	$('.true').eq(1).click(function(){
+		$('.face').eq(1).css('visibility','visible');
+		$('.face p').eq(1).html('回答正确');
+		$('.face p').eq(1).addClass('blu');
+		$('.face .img').eq(1).css('backgroundPosition','0 0');
+		$('.button').eq(1).css('backgroundPosition','0 0');
+	})
+	$('.true').eq(2).click(function(){
+		$('.face').eq(2).css('visibility','visible');
+		$('.face p').eq(2).html('回答正确');
+		$('.face p').eq(2).addClass('blu');
+		$('.face .img').eq(2).css('backgroundPosition','0 0');
+		$('.button').eq(2).css('backgroundPosition','0 0');
+	})
+	$('.true').eq(3).click(function(){
+		$('.face').eq(3).css('visibility','visible');
+		$('.face p').eq(3).html('回答正确');
+		$('.face p').eq(3).addClass('blu');
+		$('.face .img').eq(3).css('backgroundPosition','0 0');
+		$('.button').eq(3).css('backgroundPosition','0 0');
+	})
+	$('.true').eq(4).click(function(){
+		$('.face').eq(4).css('visibility','visible');
+		$('.face p').eq(4).html('回答正确');
+		$('.face p').eq(4).addClass('blu');
+		$('.face .img').eq(4).css('backgroundPosition','0 0');
+		$('.button').eq(4).css('backgroundPosition','0 0');
 	})
 
+	
+	// 回答错误
 	$('.topic-a .false').click(function(){
 		$('.topic-a .face').css('visibility','visible');
 		$('.topic-a .face p').html('正确选项: <strong>D</strong>');
